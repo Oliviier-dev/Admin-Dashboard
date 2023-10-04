@@ -46,6 +46,7 @@ img{
     padding-left: 18px;
     padding-top: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 999;
 }
 
 .showcase > .nav > div:first-child{
@@ -111,4 +112,40 @@ img{
     background-color: #0c62a8;
     font-size: 18px;
     cursor: pointer;
+}
+
+.main{
+    background-color: #e6e3e3;
+    padding-top: 20px;
+    padding-left: 18px;
+    height: auto;
+    overflow-y: scroll;
+}
+
+.template-area > .projects > .card{
+    background-color: #fff;
+}
+
+.template-area > .sidebar > .side-card{
+    background-color: #fff;
+}
+
+.template-area{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.sidebar{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
