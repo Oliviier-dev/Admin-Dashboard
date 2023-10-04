@@ -33,6 +33,7 @@ img{
 .showcase{
     height: 100vh;
     display: grid;
+    /* padding-top: 10px; */
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 6fr;
 }
@@ -43,7 +44,9 @@ img{
     grid-template-rows: 1fr 2fr;
     font-size: 18px;
     padding-left: 18px;
-} 
+    padding-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
 .showcase > .nav > div:first-child{
     display: flex;
@@ -61,7 +64,7 @@ img{
     width: 100%;
     border-radius: 16px;
     padding: 10px 10px;
-    border: none; 
+    border: none;
     background-color: #ddd;
     color: #fff;
 }
@@ -72,4 +75,40 @@ img{
     justify-content: center;
     align-items: center;
     gap: 16px;
+}
+
+.showcase > .nav > div:nth-child(2){
+    display: flex;
+}
+
+.showcase > .nav > div:nth-child(2) > div:first-child{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.showcase > .nav > div:nth-child(2) > div:nth-child(2) > ul > li{
+    display: inline;
+    padding-left: 16px;
+}
+
+.showcase > .nav > div:nth-child(2) > div:nth-child(2){
+    flex: 1.5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.showcase > .nav > div:nth-child(2) > div:nth-child(2) > ul > li > button{
+    padding: 8px 28px;
+    border: none;
+    border-radius: 18px;
+    color: #fff;
+    background-color: #0c62a8;
+    font-size: 18px;
+    cursor: pointer;
 }
