@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 ul li{
     list-style: none;
+    display: flex;
+    gap: 4px;
+    align-items: flex-start;
 }
 
 img{
